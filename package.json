@@ -31,7 +31,9 @@
     "stats-total-pending": "node ./dist/stats-total-pending.js",
     "start:debug": "cross-env DEBUG=api.utopian.io:* yarn start",
     "build": "gulp",
-    "test": "cross-env NODE_ENV=test npx mocha --ui bdd --reporter spec --colors --recursive -r ts-node/register tests/index.ts"
+    "test": "cross-env NODE_ENV=test npx mocha --ui bdd --reporter spec --colors --recursive -r ts-node/register tests/index.ts",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "express",
@@ -83,7 +85,8 @@
     "steem": "^0.6.4",
     "superagent": "^3.8.1",
     "unique-slug": "^2.0.0",
-    "winston": "^2.4.1"
+    "winston": "^2.4.1",
+    "snyk": "^1.120.0"
   },
   "devDependencies": {
     "@types/chai": "^4.0.5",
@@ -106,5 +109,6 @@
     "supertest-as-promised": "^4.0.2",
     "ts-node": "^3.3.0",
     "typescript": "^2.6.1"
-  }
+  },
+  "snyk": true
 }
