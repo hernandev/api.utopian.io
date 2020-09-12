@@ -80,7 +80,7 @@
     "sc2-sdk": "^0.0.5",
     "secure-random": "^1.1.1",
     "speakingurl": "^14.0.1",
-    "steem": "^0.6.4",
+    "steem": "^0.6.7",
     "superagent": "^3.8.1",
     "unique-slug": "^2.0.0",
     "winston": "^2.4.1"
