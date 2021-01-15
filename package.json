@@ -48,7 +48,7 @@
   ],
   "dependencies": {
     "async": "^2.6.0",
-    "aws-sdk": "^2.209.0",
+    "aws-sdk": "^2.814.0",
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
     "bs58": "^4.0.1",
