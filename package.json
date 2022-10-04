@@ -31,7 +31,9 @@
     "stats-total-pending": "node ./dist/stats-total-pending.js",
     "start:debug": "cross-env DEBUG=api.utopian.io:* yarn start",
     "build": "gulp",
-    "test": "cross-env NODE_ENV=test npx mocha --ui bdd --reporter spec --colors --recursive -r ts-node/register tests/index.ts"
+    "test": "cross-env NODE_ENV=test npx mocha --ui bdd --reporter spec --colors --recursive -r ts-node/register tests/index.ts",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "keywords": [
     "express",
@@ -47,8 +49,8 @@
     "boilerplate"
   ],
   "dependencies": {
-    "async": "^2.6.0",
-    "aws-sdk": "^2.209.0",
+    "async": "^2.6.4",
+    "aws-sdk": "^2.814.0",
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
     "bs58": "^4.0.1",
@@ -62,28 +64,29 @@
     "dotenv": "^4.0.0",
     "dsteem": "^0.8.6",
     "express": "^4.16.2",
-    "express-fileupload": "^0.4.0",
-    "express-jwt": "^5.3.0",
+    "express-fileupload": "^1.1.10",
+    "express-jwt": "^6.0.0",
     "express-validation": "^1.0.2",
-    "express-winston": "^2.4.0",
-    "helmet": "^3.9.0",
+    "express-winston": "^2.5.0",
+    "helmet": "^3.21.1",
     "http-status": "^1.0.1",
-    "jimp": "^0.2.28",
+    "jimp": "^0.3.7",
     "joi": "^13.0.2",
     "method-override": "^2.3.5",
-    "mongoose": "^4.13.4",
-    "nodemailer": "^4.4.1",
+    "mongoose": "^5.13.15",
+    "nodemailer": "^6.6.1",
     "querystring": "^0.2.0",
-    "ramda": "^0.25.0",
+    "ramda": "^0.27.2",
     "randomstring": "^1.1.5",
     "s3": "^4.4.0",
     "sc2-sdk": "^0.0.5",
     "secure-random": "^1.1.1",
     "speakingurl": "^14.0.1",
-    "steem": "^0.6.4",
+    "steem": "^0.6.7",
     "superagent": "^3.8.1",
     "unique-slug": "^2.0.0",
-    "winston": "^2.4.1"
+    "winston": "^2.4.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/chai": "^4.0.5",
@@ -106,5 +109,6 @@
     "supertest-as-promised": "^4.0.2",
     "ts-node": "^3.3.0",
     "typescript": "^2.6.1"
-  }
+  },
+  "snyk": true
 }

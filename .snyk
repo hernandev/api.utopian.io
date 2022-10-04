@@ -1,0 +1,49 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - superagent > extend:
+        patched: '2022-10-04T19:47:51.910Z'
+    - jimp > request > extend:
+        patched: '2022-10-04T19:47:51.910Z'
+    - discordie > superagent > extend:
+        patched: '2022-10-04T19:47:51.910Z'
+  'npm:hoek:20180212':
+    - jimp > request > hawk > hoek:
+        patched: '2022-10-04T19:47:51.910Z'
+    - jimp > request > hawk > boom > hoek:
+        patched: '2022-10-04T19:47:51.910Z'
+    - jimp > request > hawk > sntp > hoek:
+        patched: '2022-10-04T19:47:51.910Z'
+    - jimp > request > hawk > cryptiles > boom > hoek:
+        patched: '2022-10-04T19:47:51.910Z'
+    - express-jwt > jsonwebtoken > joi > hoek:
+        patched: '2022-10-04T19:47:51.910Z'
+    - express-jwt > jsonwebtoken > joi > topo > hoek:
+        patched: '2022-10-04T19:47:51.910Z'
+  SNYK-JS-LODASH-567746:
+    - async > lodash:
+        patched: '2022-10-04T19:47:51.910Z'
+    - express-validation > lodash:
+        patched: '2022-10-04T19:47:51.910Z'
+    - steem > lodash:
+        patched: '2022-10-04T19:47:51.910Z'
+    - aws-sdk > xmlbuilder > lodash:
+        patched: '2022-10-04T19:47:51.910Z'
+    - mongoose > async > lodash:
+        patched: '2022-10-04T19:47:51.910Z'
+    - aws-sdk > xml2js > xmlbuilder > lodash:
+        patched: '2022-10-04T19:47:51.910Z'
+  'npm:mime:20170907':
+    - s3 > mime:
+        patched: '2022-10-04T19:47:51.910Z'
+    - discordie > superagent > mime:
+        patched: '2022-10-04T19:47:51.910Z'
+  'npm:moment:20170905':
+    - express-jwt > jsonwebtoken > joi > moment:
+        patched: '2022-10-04T19:47:51.910Z'
+  'npm:stringstream:20180511':
+    - jimp > request > stringstream:
+        patched: '2022-10-04T19:47:51.910Z'
